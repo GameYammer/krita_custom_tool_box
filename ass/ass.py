@@ -1,4 +1,12 @@
 
+'''
+TODO:
+. Change buttons to be grid not vbox
+. Add proper wait for icons to load before loading buttons
+. Make buttons that are selected highlight just like normal toolbar
+. Make button hotkeys work like normal toolbar
+
+'''
 
 buttons_we_want = [
 	"Freehand Brush Tool",
