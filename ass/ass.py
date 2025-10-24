@@ -1,4 +1,5 @@
 
+
 buttons_we_want = [
 	"Freehand Brush Tool",
 	"Line Tool",
@@ -43,7 +44,7 @@ class Ass(DockWidget):
 		#for a in Krita.instance().actions():
 		#	print([a.objectName(), a.text()])
 
-        # Find the names of all the actions we want to add buttons for
+		# Find the names of all the actions we want to add buttons for
 		things = []
 		for action in Krita.instance().actions():
 			#print([action.objectName(), action.text()])
@@ -57,7 +58,7 @@ class Ass(DockWidget):
 		for entry in things:
 			action_name = entry["action_name"]
 			action_text = entry["action_text"]
-            action = Krita.instance().action(action_name)
+			action = Krita.instance().action(action_name)
 			button = QPushButton()
 			button.setToolTip(action_text)
 			button.setIcon(action.icon())
